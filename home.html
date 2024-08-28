@@ -2,6 +2,42 @@
     <head>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script type="module">
+            import Chatbox from 'https://cdn.jsdelivr.net/npm/@chaindesk/embeds@latest/dist/chatbox/index.js';
+          
+            const widget = await Chatbox.initBubble({
+              agentId: 'cm0dsgs9y04e2uo8gvw7c0iwt',
+              
+              // optional 
+              // If provided will create a contact for the user and link it to the conversation
+              contact: {
+                firstName: 'John',
+                lastName: 'Doe',
+                email: 'customer@email.com',
+                phoneNumber: '+33612345644',
+                userId: '42424242',
+              },
+              // optional
+              // Override initial messages
+              initialMessages: [
+                'Hello Georges how are you doing today?',
+                'How can I help you ?',
+              ],
+              // optional
+              // Provided context will be appended to the Agent system prompt
+              context: "The user you are talking to is John. Start by Greeting him by his name.",
+            });
+          
+            // open the chat bubble
+            widget.open();
+          
+            // close the chat bubble
+            widget.close()
+          
+            // or 
+            widget.toggle()
+        </script>
+        
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
             
@@ -87,8 +123,20 @@
                                 <a class="nav-link ms-3 my-1" href="#item-2-3">K20A Type-R</a>
                             </nav>
                             <a class="nav-link" href="#item-3">Builds</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ms-3 my-1" href="#item-3-1">HONDA CIVIC MUGEN RR</a>
+                                <a class="nav-link ms-3 my-1" href="#item-3-2">HONDA CIVIC TYPE R (FD2R)</a>
+                                <a class="nav-link ms-3 my-1" href="#item-3-3">HONDA CIVIC FD MODULO</a>
+                            </nav>
                         </nav>
                         <hr>
+                        <iframe
+                            src="https://app.chaindesk.ai/agents/cm0dsgs9y04e2uo8gvw7c0iwt/iframe"
+                            width="100%"
+                            height="35%"
+                            frameBorder="0"
+                            allow="clipboard-write"
+                        ></iframe>
                     </nav>
                 </div>
                 <div class="col-8">
@@ -305,6 +353,84 @@
                                 <p>
                                     Then the JDM K20A type-R engine block would be returned to the production assembly line to complete the engine building process.
                                 </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <br>
+                        <br>
+                        <div id="item-3">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4>
+                                        BUILDS
+                                    </h4>
+                                    <p>
+                                        The 8th generation Honda Civic, produced from 2006 to 2011, is a popular platform for car enthusiasts due to its versatility and aftermarket support. Here are some common types of builds for the 8th gen Civic:
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <img src="assets/fd3.png">
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <br>
+                        <br>
+                        <div id="item-3-1">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4>
+                                        HONDA CIVIC MUGEN RR
+                                    </h4>
+                                    <p>
+                                        The Honda Civic Mugen RR is a special, limited-edition version of the 8th generation Honda Civic, specifically based on the Civic Type R (FD2) sedan. It was produced by Mugen, Honda's in-house tuning and performance company, and was exclusively available in Japan.
+                                        The Honda Civic Mugen RR is revered for its exceptional handling, precise steering, and high-revving engine. It is considered one of the best-handling front-wheel-drive cars ever made, thanks to the extensive tuning and modifications by Mugen.
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <img src="assets/mugen.png">
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        Due to its limited production and Mugen's reputation for high-quality engineering, the Mugen RR has become a collector's item and a symbol of Honda's performance heritage.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <br>
+                        <br>
+                        <div id="item-3-2">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4>
+                                        HONDA CIVIC TYPE R (FD2R)
+                                    </h4>
+                                    <p>
+                                        The Honda Civic FD2 Type R is the high-performance version of the 8th generation Civic, specifically designed and sold primarily in the Japanese market. Unlike the Civic Type R models available in Europe (which were based on the hatchback body style), the FD2 Type R is a sedan, making it unique among Civic Type R models. The FD2 Type R is widely regarded as one of the best-handling front-wheel-drive cars ever produced. Its combination of a high-revving engine, sharp handling, and precise steering make it a favorite among driving enthusiasts.
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <img src="assets/fd4.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <hr>    
+                        <br>
+                        <br>
+                        <div id="item-3-3">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4>
+                                        HONDA CIVIC FD MODULO
+                                    </h4>
+                                    <p>
+                                        The Honda Civic FD Modulo refers to a variant or a version of the 8th generation Honda Civic that has been equipped with Honda's official aftermarket Modulo parts. Modulo is Honda’s in-house brand for accessories and styling enhancements, designed to provide a sportier and more personalized look while maintaining the factory quality and fitment.
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <img src="assets/fd5.jpg">
+                                </div>
                             </div>
                         </div>
                     </div>
